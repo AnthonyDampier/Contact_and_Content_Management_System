@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation} from 'react-router-dom';
 import './Nav.css';
 import { useSelector } from 'react-redux';
+import { Typography } from '@mui/material';
 
 function Nav() {
   const user = useSelector((store) => store.user);
@@ -32,19 +33,27 @@ function Nav() {
             </Link> */}
 
             <Link id={location == '/StoriesPage' ? 'active' : ''} className="navLink" to="/StoriesPage">
-              Stories
+                <Typography variant="h6" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1 }}>
+                  Stories
+                </Typography>
             </Link>
 
             <Link id={location == '/ContactsPage' ? 'active' : ''} className="navLink" to="/ContactsPage">
-              Contacts
+              <Typography variant="h6" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1 }}>
+                Contacts
+              </Typography>
             </Link>
 
             <Link id={location == '/ThemesPage' ? 'active' : ''} className="navLink" to="/ThemesPage">
-              Themes
+              <Typography variant="h6" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1 }}>
+                Themes
+              </Typography>
             </Link>
 
             <Link id={location == '/ArchivePage' ? 'active' : ''}  className="navLink" to="/ArchivePage">
-              Archive
+              <Typography variant="h6" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1 }}>
+                Archive
+              </Typography>
             </Link>
 
             {/* <Link className="navLink" to="/AdminPage">

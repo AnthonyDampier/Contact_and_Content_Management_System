@@ -24,7 +24,7 @@ export default function Header(props) {
         <Toolbar>
 
           <Typography variant="h4" color="inherit" sx={{ textDecoration: 'none', flexGrow: 1 }}>
-            MN Women's Press Content Manager
+            Customer & Content Manager
           </Typography>
 
           {user.id ?
